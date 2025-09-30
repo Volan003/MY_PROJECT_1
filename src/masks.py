@@ -7,7 +7,7 @@ def get_mask_card_number(card_number: int) -> str:
     output_list =(card_str[:4] + " " + card_str[4:6] + "**" + " " + "****" + " " + card_str[-4:])
     return output_list
 
-print (get_mask_card_number (1234567891234567))
+#print (get_mask_card_number (1234567891234567))
 
 
 def get_mask_account(card_account: int) -> str:
@@ -17,5 +17,5 @@ def get_mask_account(card_account: int) -> str:
     output_list =("**" + card_account_str[-4:])
     return output_list
 
-print (get_mask_account (1234567891234567))
+#print (get_mask_account (1234567891234567))
 
