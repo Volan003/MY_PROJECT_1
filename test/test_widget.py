@@ -1,5 +1,7 @@
-import pytest
+import sys
+sys.path.append('C:\\Users\\volod\\PycharmProjects\\MY_PROJECT_1\\src')
 
+import pytest
 from src.widget import mask_account_card, get_date
 
 
@@ -8,7 +10,7 @@ def account_card():
     return "Visa Platinum 159683786870519"
 
 def test_account_card(account_card):
-    assert mask_account_card(account_card) == "Visa Platinum 1596 83** **** 5199"
+    assert mask_account_card(account_card) == "Visa Platinum 1596 83** **** 0519"
 
 @pytest.fixture
 def date_time ():

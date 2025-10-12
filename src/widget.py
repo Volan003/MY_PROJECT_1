@@ -10,7 +10,7 @@ def mask_account_card(card_type_number: str) -> str:
         return f"{card_info[0]} {get_mask_card_number(card_info[1])}"
 
 
-print(mask_account_card("Visa Platinum 1596837868705199"))
+print(mask_account_card("Visa Platinum 159683786870519"))
 
 from datetime import datetime
 
